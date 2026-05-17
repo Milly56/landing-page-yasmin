@@ -348,6 +348,114 @@ nav.scrolled {
   box-shadow: 0 4px 12px rgba(212,160,23,0.35);
 }
 
+/* ===== CARD DE TEXTO — Escrita ===== */
+.portfolio-card--text {
+  background: linear-gradient(160deg, #1a1508 0%, #0d0c09 100%);
+  border: 1px solid rgba(212,160,23,0.15);
+  cursor: default;
+  display: flex;
+  align-items: stretch;
+}
+
+.portfolio-card--text:hover {
+  transform: none;
+  box-shadow: 0 0 40px rgba(212,160,23,0.08);
+}
+
+.portfolio-text-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 2.2rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212,160,23,0.4) transparent;
+}
+
+.portfolio-text-content::-webkit-scrollbar {
+  width: 3px;
+}
+
+.portfolio-text-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.portfolio-text-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, transparent, rgba(212,160,23,0.5), transparent);
+  border-radius: 10px;
+}
+
+.portfolio-text-content::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, transparent, rgba(212,160,23,0.85), transparent);
+}
+
+.portfolio-text-tag {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.portfolio-text-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.portfolio-text-body p {
+  font-family: 'Crimson Pro', serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.75;
+  color: rgba(232,223,200,0.75);
+  margin: 0;
+}
+
+.portfolio-text-signature {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(212,160,23,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sig-name {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+}
+
+.sig-sub {
+  font-family: 'Crimson Pro', serif;
+  font-size: 0.88rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(232,223,200,0.5);
+}
+
+.portfolio-text-copyright {
+  margin-top: 1rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(212,160,23,0.3);
+  text-align: right;
+}
+
 /* Placeholder para slides sem imagem */
 .portfolio-placeholder {
   position: relative;
